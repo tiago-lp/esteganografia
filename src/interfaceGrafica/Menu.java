@@ -1,6 +1,5 @@
 package interfaceGrafica;
-/* Tiago Pereira - Ciência da Computação - UFCG
- */
+
 import java.awt.CardLayout;
 import java.awt.Container;
 import java.awt.Dimension;
