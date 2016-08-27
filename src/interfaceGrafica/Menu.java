@@ -1,6 +1,7 @@
 package interfaceGrafica;
 
 import java.awt.CardLayout;
+import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
@@ -33,13 +34,14 @@ public class Menu extends JFrame implements ActionListener {
 
 	public Menu() {
 		super("Esteganografia em audio");
-		setSize(500, 200);
+		setSize(500, 300);
 		setVisible(true);
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		this.layout = new CardLayout();
+	
 
 		setLayout(this.layout);
 		this.cards = getContentPane();
@@ -60,6 +62,7 @@ public class Menu extends JFrame implements ActionListener {
 
 	private Container telaInicial() {
 		JLabel msg = new JLabel("Selecione um arquivo MP3 e clique no que deseja fazer");
+		msg.setForeground(Color.white);
 
 		this.selecArquivo.setPreferredSize(new Dimension(180, 25));
 		this.selecArquivo.addActionListener(this);
@@ -75,6 +78,7 @@ public class Menu extends JFrame implements ActionListener {
 
 		Container principal = new JPanel();
 		principal.setLayout(new GridBagLayout());
+		principal.setBackground(Color.black);
 
 		GridBagConstraints cont = new GridBagConstraints();
 		cont.weightx = 1;
@@ -105,6 +109,7 @@ public class Menu extends JFrame implements ActionListener {
 
 	private Container encriptacao() {
 		JLabel encriptarMsg = new JLabel("Digite a mensagem a ser encriptada: ");
+		encriptarMsg.setForeground(Color.white);
 		this.mensagem = new JTextField(20);
 		this.mensagem.addActionListener(this);
 
@@ -115,6 +120,7 @@ public class Menu extends JFrame implements ActionListener {
 
 		Container encriptacao = new JPanel();
 		encriptacao.setLayout(new GridBagLayout());
+		encriptacao.setBackground(Color.black);
 
 		GridBagConstraints cont = new GridBagConstraints();
 		cont.weightx = 1;
@@ -140,7 +146,7 @@ public class Menu extends JFrame implements ActionListener {
 	private JFileChooser abrirArquivo() {
 		JFileChooser file = new JFileChooser();
 		file.setFileSelectionMode(JFileChooser.FILES_ONLY);
-
+		
 		FileNameExtensionFilter filterFile = new FileNameExtensionFilter("Arquivos MP3", "mp3");
 		file.addChoosableFileFilter(filterFile);
 		file.setAcceptAllFileFilterUsed(false);
