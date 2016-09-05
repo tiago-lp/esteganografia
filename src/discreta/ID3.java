@@ -12,6 +12,7 @@ import org.farng.mp3.id3.FrameBodyTMOO;
 import org.farng.mp3.id3.ID3v2_4Frame;
 
 public class ID3 {
+	
 	private static final int CHAVE = 7;
 	
 	private MP3File mp3file;

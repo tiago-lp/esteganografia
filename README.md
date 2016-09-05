@@ -1,8 +1,5 @@
-Trabalho para disciplina de Matemática Discreta
+Trabalho para disciplina de Matematica Discreta
 
-Tiago Lima Pereira - 115210912
-
-Programa feito para o trabalho do segundo estágio da disciplina de Matemática Discreta. O objetivo desse programa é proporcionar um modo de realização de Esteganografia em áudio, por meio da edição de ID3. Basta fornecer uma mensagem que o programa realizará a ocultação da mensagem. O processo inverso também pode ser realizado: selecione o arquivo que o programa dirá se ali existe alguma mensagem.
-
+Implementacao feita para a disciplina de Matematica Discreta. O objetivo desse programa eh proporcionar um modo de realizacao de Esteganografia em Audio, por meio da edicao de ID3. Basta fornecer uma mensagem que o programa realizara a ocultacao da mensagem. O processo inverso tambem pode ser realizado: selecione o arquivo que o programa dira se ali existe alguma mensagem.
 
 O programa depende da biblioteca jid3lib para funcionar corretamente.
