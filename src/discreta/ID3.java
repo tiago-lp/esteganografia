@@ -13,7 +13,7 @@ import org.farng.mp3.id3.ID3v2_4Frame;
 
 public class ID3 {
 	
-	private static final int CHAVE = 7;
+	private static final int CHAVE = 5;
 	
 	private MP3File mp3file;
 	private AbstractID3v2 tag;
@@ -55,6 +55,7 @@ public class ID3 {
 
 	}
 	
+	// Metodo de cifra de Cesar
 	public String cifra(String mensagem, int chave){
         StringBuilder builder = new StringBuilder();
  
