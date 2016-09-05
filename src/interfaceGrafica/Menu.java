@@ -34,7 +34,7 @@ public class Menu extends JFrame implements ActionListener {
 
 	public Menu() {
 		super("Esteganografia em audio");
-		setSize(500, 300);
+		setSize(600, 400);
 		setVisible(true);
 		setResizable(false);
 		setLocationRelativeTo(null);
